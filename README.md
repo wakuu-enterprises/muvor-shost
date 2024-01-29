@@ -1,1 +1,1 @@
-Secure Muvor Protocol Implementation in Go
+Secure Muvor Protocol (with smtp) Implementation in Go
