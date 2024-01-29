@@ -1,0 +1,20 @@
+# install golang dependencies  
+# go mod init src
+# go mod tidy
+
+# ---
+
+# build publisher and subscribers into ./build directory
+go build -o ./build/publisher ./src/publisher.go ./src/qemu.go
+go build -o ./build/subscriber ./src/subsciber.go ./src/dht.go ./src/discover.go
+
+# ---
+
+# run subscribers1(in terminal 1)
+./build/subscriber
+
+# run subscribers2(in terminal 2)
+./build/subscriber
+
+# run publisher(in terminal 3)
+./build/publisher
