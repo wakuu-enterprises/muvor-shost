@@ -1,1 +1,0 @@
-Secure Muvor Protocol Implementation in Go
